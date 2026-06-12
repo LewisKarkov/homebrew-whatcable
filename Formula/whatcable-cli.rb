@@ -21,7 +21,7 @@ class WhatcableCli < Formula
     # would look for the resource bundle in bin/ rather than libexec/. Using
     # write_exec_script makes Homebrew drop a wrapper that exec's the libexec
     # binary, so the process starts with its real path and the lookup works.
-    libexec.install "whatcable", "WhatCable_WhatCableCore.bundle", "Info.plist"
+    libexec.install "whatcable", "WhatCable_WhatCableCore.bundle", "TUIkit_TUIkit.bundle", "Info.plist"
     bin.write_exec_script libexec/"whatcable"
   end
 
