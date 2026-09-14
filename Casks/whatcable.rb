@@ -18,6 +18,8 @@ cask "whatcable" do
   app "WhatCable.app"
   binary "#{appdir}/WhatCable.app/Contents/Helpers/whatcable"
 
+  uninstall quit: "uk.whatcable.whatcable"
+
   zap trash: [
     "~/Library/Application Scripts/M4RUJ7W6MP.uk.whatcable.whatcable",
     "~/Library/Application Scripts/uk.whatcable.whatcable.widget",
